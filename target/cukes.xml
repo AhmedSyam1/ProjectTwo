@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="7" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="219.335">
+<testcase classname="user could add different products to Wishlist" name="user could add different products to his Wishlist" time="16.448">
+<system-out><![CDATA[Given user selects his favorite product.....................................passed
+When user adds a product to the Wishlist....................................passed
+And user adds another product to the Wishlist...............................passed
+Then logged user navigates to his Wishlist page.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="user could add different products to Compare list" name="user could add different products to Compare list" time="15.251">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&quot;item-grid&quot;]/div[1]/div[1]/div[2]/div[3]/div[2]/button[2]&quot;}&#10;  (Session info: chrome=101.0.4951.67)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'DESKTOP-A2U04PH', ip: '192.168.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [983cff23483fbf0c6086eb2d80ee8743, findElement {using=xpath, value=//div[@class=&quot;item-grid&quot;]/div[1]/div[1]/div[2]/div[3]/div[2]/button[2]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51421}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51421/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 983cff23483fbf0c6086eb2d80ee8743" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user can add First Product to Compare.................................failed
+And user can add Second Product to Compare..................................skipped
+And user can add Third Product to Compare...................................skipped
+When user navigates to Compare products.....................................skipped
+Then user could compare between the selected products.......................skipped
+And user can clear a product from list......................................skipped
+And user deletes all the list...............................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="item-grid"]/div[1]/div[1]/div[2]/div[3]/div[2]/button[2]"}
+  (Session info: chrome=101.0.4951.67)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-A2U04PH', ip: '192.168.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [983cff23483fbf0c6086eb2d80ee8743, findElement {using=xpath, value=//div[@class="item-grid"]/div[1]/div[1]/div[2]/div[3]/div[2]/button[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51421}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51421/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 983cff23483fbf0c6086eb2d80ee8743
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at Pages.P011_compareListPage.compareProd1Ele(P011_compareListPage.java:32)
+	at step_definitions.S011_compareListStepDefinitions.First_Product_Compare(S011_compareListStepDefinitions.java:18)
+	at ✽.user can add First Product to Compare(file:///C:/Users/HP/Documents/project_two_report/src/main/resources/features/F011_compareList.feature:5)
+]]></failure>
+</testcase>
+<testcase classname="user could Create Successful Order" name="user could Create Successful Order" time="0.01">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user agrees with terms and proceed to Checkout........................undefined
+When user fills out Billing address to Create Order.........................skipped
+And user confirms Billing address...........................................skipped
+And user selects Shipping Method to Continue................................skipped
+And user selects Payment Method to Continue.................................skipped
+When user fills out Payment Information.....................................skipped
+Then user could confirm his order...........................................skipped
+And user can check order details............................................skipped
+And user could save invoice.................................................skipped
+And user could print invoice................................................skipped
+]]></failure>
+</testcase>
+<testcase classname="New user could register his Data" name="new user could register with valid data" time="8.598">
+<system-out><![CDATA[Given new user open registration page.......................................passed
+And new user registers with valid data......................................passed
+When new user can register..................................................passed
+Then a success message is displayed.........................................passed
+And user logs out after registering.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User could use login functionality to open his account" name="user could login with valid email and password" time="11.137">
+<system-out><![CDATA[Given user open login page..................................................passed
+When user can login with valid email and valid password.....................passed
+Then user could login successfully..........................................passed
+And logged user logs out....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User could reset his password" name="user reset his password successfully" time="15.081">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;a[href=&quot;/passwordrecovery&quot;]&quot;}&#10;  (Session info: chrome=101.0.4951.67)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'DESKTOP-A2U04PH', ip: '192.168.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [983cff23483fbf0c6086eb2d80ee8743, findElement {using=css selector, value=a[href=&quot;/passwordrecovery&quot;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51421}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51421/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 983cff23483fbf0c6086eb2d80ee8743" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user clicks on forgot password........................................failed
+When user enters a valid email address......................................skipped
+And user clicks on recover button...........................................skipped
+Then user got a Displayed Message...........................................skipped
+And user could close the Notification Bar...................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a[href="/passwordrecovery"]"}
+  (Session info: chrome=101.0.4951.67)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-A2U04PH', ip: '192.168.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [983cff23483fbf0c6086eb2d80ee8743, findElement {using=css selector, value=a[href="/passwordrecovery"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51421}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51421/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 983cff23483fbf0c6086eb2d80ee8743
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at Pages.P03_resetPasswordPage.restForgotPassButtonEle(P03_resetPasswordPage.java:24)
+	at step_definitions.S03_resetPasswordStepDefinitions.forgot_password(S03_resetPasswordStepDefinitions.java:22)
+	at ✽.user clicks on forgot password(file:///C:/Users/HP/Documents/project_two_report/src/main/resources/features/F03_resetPassword.feature:5)
+]]></failure>
+</testcase>
+<testcase classname="user could search for any product on the website" name="Logged user could search by product name" time="0.072">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user navigates to login page..........................................undefined
+And user can login with valid email and valid password......................skipped
+When user clicks on search field............................................skipped
+And user searches with name of product......................................skipped
+Then user could find relative results.......................................skipped
+]]></failure>
+</testcase>
+<testcase classname="user could switch between currencies" name="user can switch currency" time="15.063">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;a[href=&quot;/htc-one-mini-blue&quot;]&quot;}&#10;  (Session info: chrome=101.0.4951.67)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'DESKTOP-A2U04PH', ip: '192.168.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [983cff23483fbf0c6086eb2d80ee8743, findElement {using=css selector, value=a[href=&quot;/htc-one-mini-blue&quot;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51421}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51421/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 983cff23483fbf0c6086eb2d80ee8743" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user selects a product................................................failed
+When user changes the currency..............................................skipped
+Then user could find the selected currency..................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a[href="/htc-one-mini-blue"]"}
+  (Session info: chrome=101.0.4951.67)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-A2U04PH', ip: '192.168.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [983cff23483fbf0c6086eb2d80ee8743, findElement {using=css selector, value=a[href="/htc-one-mini-blue"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51421}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51421/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 983cff23483fbf0c6086eb2d80ee8743
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at Pages.P05_switchCurrenciesUsEuroPage.switchSelProdEle(P05_switchCurrenciesUsEuroPage.java:24)
+	at step_definitions.S05_switchCurrenciesUsEuroStepDefinitions.select_a_product(S05_switchCurrenciesUsEuroStepDefinitions.java:15)
+	at ✽.user selects a product(file:///C:/Users/HP/Documents/project_two_report/src/main/resources/features/F05_switchCurrenciesUsEuro.feature:5)
+]]></failure>
+</testcase>
+<testcase classname="user could select different Categories" name="Logged user could select random category then hover and open sub-Category" time="31.366">
+<failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[Given user can select Random Category.......................................failed
+Then user could hover and open sub-Category.................................skipped
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at Pages.P06_differentCategoriesPage.categoryRandomEle(P06_differentCategoriesPage.java:40)
+	at step_definitions.S06_differentCategoriesStepDefinitions.select_random_Category(S06_differentCategoriesStepDefinitions.java:16)
+	at ✽.user can select Random Category(file:///C:/Users/HP/Documents/project_two_report/src/main/resources/features/F06_differentCategories.feature:5)
+]]></failure>
+</testcase>
+<testcase classname="user could filter with color" name="Logged user could filter product with color" time="6.538">
+<system-out><![CDATA[Given logged user selects Category and hover to open sub-Category...........passed
+When logged user can filter sub-Category with color.........................passed
+Then logged user could find product with the selected color.................passed
+]]></system-out>
+</testcase>
+<testcase classname="user could select different tags" name="Logged user could select different tags" time="7.875">
+<system-out><![CDATA[Given logged user can select a popular tag..................................passed
+When logged user finds products.............................................passed
+Then logged user could select a different tag...............................passed
+And logged user finds another different products............................passed
+]]></system-out>
+</testcase>
+<testcase classname="could add different products to Shopping Cart" name="user could add different products to Shopping Cart" time="8.078">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@class=&quot;cart&quot;]/tbody/tr[1]/td[1]/input&quot;}&#10;  (Session info: chrome=101.0.4951.67)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'DESKTOP-A2U04PH', ip: '192.168.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [983cff23483fbf0c6086eb2d80ee8743, findElement {using=xpath, value=//table[@class=&quot;cart&quot;]/tbody/tr[1]/td[1]/input}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51421}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51421/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 983cff23483fbf0c6086eb2d80ee8743" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user checks all his Wishlist products.................................failed
+Then user could add his Wishlist products to Shopping Cart..................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//table[@class="cart"]/tbody/tr[1]/td[1]/input"}
+  (Session info: chrome=101.0.4951.67)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-A2U04PH', ip: '192.168.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [983cff23483fbf0c6086eb2d80ee8743, findElement {using=xpath, value=//table[@class="cart"]/tbody/tr[1]/td[1]/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51421}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51421/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 983cff23483fbf0c6086eb2d80ee8743
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at Pages.P09_addProductsToShoppingCartPage.shoppCartProdsCheckEle(P09_addProductsToShoppingCartPage.java:24)
+	at step_definitions.S09_addProductsToShoppingCartStepDefinitions.Check_Wishlist_products(S09_addProductsToShoppingCartStepDefinitions.java:15)
+	at ✽.user checks all his Wishlist products(file:///C:/Users/HP/Documents/project_two_report/src/main/resources/features/F09_addProductsToShoppingCart.feature:5)
+]]></failure>
+</testcase>
+</testsuite>

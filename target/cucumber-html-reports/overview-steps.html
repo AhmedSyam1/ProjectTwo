@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Cucumber HTML Reports</td>
+        <td>1</td>
+      <td>14 May 2022, 19:37</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">step_definitions.S010_addProductsToWishlistStepDefinitions.add_another_product_to_Wishlist()</td>
+              <td>1</td>
+              <td class="duration" data-value="4362000000">4.362</td>
+              <td class="duration" data-value="4362000000">4.362</td>
+              <td class="duration" data-value="4362000000">4.362</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S010_addProductsToWishlistStepDefinitions.add_product_Wishlist()</td>
+              <td>1</td>
+              <td class="duration" data-value="6761000000">6.761</td>
+              <td class="duration" data-value="6761000000">6.761</td>
+              <td class="duration" data-value="6761000000">6.761</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S010_addProductsToWishlistStepDefinitions.navigates_to_Wishlist()</td>
+              <td>1</td>
+              <td class="duration" data-value="2853000000">2.853</td>
+              <td class="duration" data-value="2853000000">2.853</td>
+              <td class="duration" data-value="2853000000">2.853</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S010_addProductsToWishlistStepDefinitions.select_favorite_product()</td>
+              <td>1</td>
+              <td class="duration" data-value="2456000000">2.456</td>
+              <td class="duration" data-value="2456000000">2.456</td>
+              <td class="duration" data-value="2456000000">2.456</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S011_compareListStepDefinitions.Delete_all_list()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S011_compareListStepDefinitions.First_Product_Compare()</td>
+              <td>1</td>
+              <td class="duration" data-value="15157000000">15.157</td>
+              <td class="duration" data-value="15157000000">15.157</td>
+              <td class="duration" data-value="15157000000">15.157</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S011_compareListStepDefinitions.Second_Product_Compare()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S011_compareListStepDefinitions.Third_Product_Compare()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S011_compareListStepDefinitions.clear_product()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S011_compareListStepDefinitions.compare_between_selected_products()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S011_compareListStepDefinitions.navigate_to_Compare_products()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S01_registrationStepDefinitions.log_out_after_registering()</td>
+              <td>1</td>
+              <td class="duration" data-value="1241000000">1.241</td>
+              <td class="duration" data-value="1241000000">1.241</td>
+              <td class="duration" data-value="1241000000">1.241</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S01_registrationStepDefinitions.new_user_register()</td>
+              <td>1</td>
+              <td class="duration" data-value="2867000000">2.867</td>
+              <td class="duration" data-value="2867000000">2.867</td>
+              <td class="duration" data-value="2867000000">2.867</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S01_registrationStepDefinitions.registration_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="2035000000">2.035</td>
+              <td class="duration" data-value="2035000000">2.035</td>
+              <td class="duration" data-value="2035000000">2.035</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S01_registrationStepDefinitions.registration_valid_data()</td>
+              <td>1</td>
+              <td class="duration" data-value="2259000000">2.259</td>
+              <td class="duration" data-value="2259000000">2.259</td>
+              <td class="duration" data-value="2259000000">2.259</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S01_registrationStepDefinitions.success_message_displayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="194000000">0.194</td>
+              <td class="duration" data-value="194000000">0.194</td>
+              <td class="duration" data-value="194000000">0.194</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S02_loginStepDefinitions.logged_user_logs_out()</td>
+              <td>1</td>
+              <td class="duration" data-value="5196000000">5.196</td>
+              <td class="duration" data-value="5196000000">5.196</td>
+              <td class="duration" data-value="5196000000">5.196</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S02_loginStepDefinitions.login_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="2059000000">2.059</td>
+              <td class="duration" data-value="2059000000">2.059</td>
+              <td class="duration" data-value="2059000000">2.059</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S02_loginStepDefinitions.login_successfully()</td>
+              <td>1</td>
+              <td class="duration" data-value="2056000000">2.056</td>
+              <td class="duration" data-value="2056000000">2.056</td>
+              <td class="duration" data-value="2056000000">2.056</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S02_loginStepDefinitions.valid_email_and_valid_password()</td>
+              <td>2</td>
+              <td class="duration" data-value="911000000">0.911</td>
+              <td class="duration" data-value="911000000">1.822</td>
+              <td class="duration" data-value="1822000000">1.822</td>
+              <td class="failed">50.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S03_resetPasswordStepDefinitions.close_Notification_Bar()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S03_resetPasswordStepDefinitions.enters_email_address_to_reset_password()</td>
+              <td>1</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S03_resetPasswordStepDefinitions.forgot_password()</td>
+              <td>1</td>
+              <td class="duration" data-value="15043000000">15.043</td>
+              <td class="duration" data-value="15043000000">15.043</td>
+              <td class="duration" data-value="15043000000">15.043</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S03_resetPasswordStepDefinitions.got_a_Displayed_Message()</td>
+              <td>1</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S03_resetPasswordStepDefinitions.user_clicks_on_recover_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S04_SearchStepDefinitions.user_clicks_search_field()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S04_SearchStepDefinitions.user_find_relative_results()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S04_SearchStepDefinitions.user_searches_name_of_product()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S05_switchCurrenciesUsEuroStepDefinitions.changes_currency()</td>
+              <td>1</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S05_switchCurrenciesUsEuroStepDefinitions.find__selected_currency()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S05_switchCurrenciesUsEuroStepDefinitions.select_a_product()</td>
+              <td>1</td>
+              <td class="duration" data-value="15057000000">15.057</td>
+              <td class="duration" data-value="15057000000">15.057</td>
+              <td class="duration" data-value="15057000000">15.057</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S06_differentCategoriesStepDefinitions.open_subCategory()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S06_differentCategoriesStepDefinitions.select_random_Category()</td>
+              <td>1</td>
+              <td class="duration" data-value="31365000000">31.365</td>
+              <td class="duration" data-value="31365000000">31.365</td>
+              <td class="duration" data-value="31365000000">31.365</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S07_filterWithColorStepDefinitions.Filter_color()</td>
+              <td>1</td>
+              <td class="duration" data-value="117000000">0.117</td>
+              <td class="duration" data-value="117000000">0.117</td>
+              <td class="duration" data-value="117000000">0.117</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S07_filterWithColorStepDefinitions.Find_product_with_selected_color()</td>
+              <td>1</td>
+              <td class="duration" data-value="59000000">0.059</td>
+              <td class="duration" data-value="59000000">0.059</td>
+              <td class="duration" data-value="59000000">0.059</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S07_filterWithColorStepDefinitions.select_Category()</td>
+              <td>1</td>
+              <td class="duration" data-value="6360000000">6.360</td>
+              <td class="duration" data-value="6360000000">6.360</td>
+              <td class="duration" data-value="6360000000">6.360</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S08_selectDifferentTagsStepDefinitions.find_another_different_products()</td>
+              <td>1</td>
+              <td class="duration" data-value="239000000">0.239</td>
+              <td class="duration" data-value="239000000">0.239</td>
+              <td class="duration" data-value="239000000">0.239</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S08_selectDifferentTagsStepDefinitions.find_products()</td>
+              <td>1</td>
+              <td class="duration" data-value="488000000">0.488</td>
+              <td class="duration" data-value="488000000">0.488</td>
+              <td class="duration" data-value="488000000">0.488</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S08_selectDifferentTagsStepDefinitions.select_a_different_tag()</td>
+              <td>1</td>
+              <td class="duration" data-value="2328000000">2.328</td>
+              <td class="duration" data-value="2328000000">2.328</td>
+              <td class="duration" data-value="2328000000">2.328</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S08_selectDifferentTagsStepDefinitions.select_popular_tag()</td>
+              <td>1</td>
+              <td class="duration" data-value="4817000000">4.817</td>
+              <td class="duration" data-value="4817000000">4.817</td>
+              <td class="duration" data-value="4817000000">4.817</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S09_addProductsToShoppingCartStepDefinitions.Check_Wishlist_products()</td>
+              <td>1</td>
+              <td class="duration" data-value="8058000000">8.058</td>
+              <td class="duration" data-value="8058000000">8.058</td>
+              <td class="duration" data-value="8058000000">8.058</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.S09_addProductsToShoppingCartStepDefinitions.add_Wishlist_products_to_Shopping_Cart()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>42</td>
+            <td>43</td>
+            <td class="duration">3.145</td>
+            <td class="duration">31.365</td>
+            <td class="duration">2:15.252</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

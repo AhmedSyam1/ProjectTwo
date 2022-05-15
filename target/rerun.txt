@@ -1,0 +1,7 @@
+file:src/main/resources/features/F03_resetPassword.feature:4
+file:src/main/resources/features/F09_addProductsToShoppingCart.feature:4
+file:src/main/resources/features/F05_switchCurrenciesUsEuro.feature:4
+file:src/main/resources/features/F012_createSuccessfulOrder.feature:4
+file:src/main/resources/features/F011_compareList.feature:4
+file:src/main/resources/features/F06_differentCategories.feature:4
+file:src/main/resources/features/F04_Search.feature:4
